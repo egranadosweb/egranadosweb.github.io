@@ -1,0 +1,84 @@
+#contacto{
+    padding-top: 55px;
+    padding-bottom: 89px;
+    background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1) );
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+#contacto span, #contacto p, #contacto ul{
+    color: #fff;
+}
+#contacto .contenedor{
+    padding-top: 34px;
+}
+.footer p, .footer span, .footer li{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 200;
+}
+.footer p{
+    max-width: 400px;
+    margin: auto;
+}
+.footer .cajas hr{
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+.footer .tituloseccion{
+    color: #fff;
+}
+.footer hr{
+    background-color: #cc1019;
+}
+.footer .contenedor{
+    text-align: center;
+    font-size: 19px;
+}
+.footer .marca img{
+    max-width: 200px;
+}
+.footer .flex{
+    flex-wrap: wrap;
+    align-items: unset;
+}
+.footer .flex .cajas{
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.footer span{
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+}
+.footer ul{
+    text-align: center;
+    list-style: none;
+}
+.footer ul li{
+    margin-bottom: 5px;
+}
+.copy{
+    z-index: 120;
+    position: absolute;
+    bottom: ;
+    background-color: #1461ff;
+    color: #fff;
+    height: 34px;
+    display: flex;
+    text-align: center;
+}
+.copy a{
+    color: #fff;
+}
+.copy a:hover{
+    color: yellow;
+}
+
+@media (min-width:880px){
+    .footer .flex .cajas{
+        width: 25%;
+    }
+}

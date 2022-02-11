@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+
+@import url(modalpromocion.css);
+@import url(plugins.css);
+@import url(menu.css);
+@import url(logo.css);
+@import url(footer.css);
+@import url(tienda.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Suez One', serif;
+    font-size: 55px;
+    line-height: 65px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    /*font-family: 'Suez One', serif;*/
+    font-size: 34px;
+    line-height: 38px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+hr{
+    width: 25%;
+    height: 8px;
+    background-color: cadetblue;
+    margin: auto;
+    border: none;
+    margin-top: 34px;
+    margin-bottom: 55px;
+    border-radius: 5px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    color: #d8d8d8;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 200;
+}
+
+section , header {
+    width: 100%;
+}
+
+span {
+    font-family: 'Oswald', sans-serif;
+    color: gray;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contenedor {
+    margin: auto;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.centrar {
+    margin: auto;
+    text-align: center;
+}
+
+.colorblanco {
+    color: #fff;
+}
+.tituloseccion{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+
+/*77777777777   BANNER   777777777777777777777*/
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@keyframes wow{
+    0%{
+            -webkit-transform: translateX(-100%) scale(1);
+            transform: translateX(-100%) scale(1);
+    }
+    25%{
+       
+    }
+    50%{
+        
+    }
+    75%{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    90%{
+        -webkit-transform: translateX(0%) scale(1);
+        transform: translateX(0%) scale(1);
+    }
+    100%{
+        -webkit-transform: translateX(0%) scale(1);
+        transform: translateX(0%) scale(1);
+    }
+}
+
+@keyframes titulo{
+    from{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    to{
+        -webkit-transform: translateX(-5%);
+        transform: translateX(-5%);
+    }
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++*/
+.banner {
+    z-index: 11;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px black;
+    overflow: hidden;
+    position: relative;
+    height: 700px;
+    background: linear-gradient(to left, #020b21 0%, rgb(255, 255, 255) 100%);
+    background-image: url(../img/secciones/dota2.webp);
+    background-size: cover;
+    background-position: center;
+    color: 
+}
+
+/* DEGRADADO SOBRE LA IMAGEN Y ANTES DEL TEXTO*/
+#banner .sombra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) );
+    opacity:1;
+}
+
+.banner .shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    background: -webkit-gradient(linear, left top, right top, from(#3c0303), to(red));
+    background: linear-gradient(to right, #3c0303 0%, red 100%);*/
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+    /*-webkit-transform: skew(45deg);
+    transform: skew(45deg);*/
+    transform: matrix(20deg);
+}
+
+.banner .shape img {
+    width: 700px;
+    transform: translateX(-100%) scale(1);
+    animation-name: wow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.banner .caja {
+    padding: 55px;
+    float: left;
+}
+
+.banner .izq {
+    width: 50%;
+    height:100%;
+}
+
+.banner .der {
+    width: 50%;
+    height:100%;  
+}
+.banner .der div{
+     -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-animation-name: titulo;
+    animation-name: titulo;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.banner .der h1{
+    text-shadow: 0px 3px 3px black;
+}
+
+.banner .der span{
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0px 3px 3px black;
+    color: yellow;
+}
+/*77777777777   BANNER   777777777777777777777*/
+
+
+
+
+.seccion {
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#081a4b), to(rgb(1, 2, 20)));
+    background: linear-gradient(to bottom, #081a4b 0%, rgb(1, 2, 20) 100%);
+    color: 
+}
+.seccion .sombra:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+.seccion .flex{
+    position: relative;
+    z-index: 2;
+}
+.seccion .shape {
+    background: -webkit-gradient(linear, right top, left top, from(#3c0303), to(red));
+    background: linear-gradient(to left, #3c0303 0%, red 100%);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 60%;
+    /*-webkit-transform: skew(45deg);
+    transform: skew(45deg);*/
+    -webkit-transform: matrix(20deg);
+    transform: matrix(20deg);
+   
+}
+
+.seccion .flex{
+    height: 100%;
+}
+
+.seccion .caja{
+    padding: 55px;
+    width: 50%;
+}
+
+
+.laptop {
+    /*
+    z-index: 11;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px black;*/
+    background-image: url(../img/secciones/laptop.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.laptop h2 {
+    color: #9be422;
+}
+
+.laptop span{
+    padding: 5px;
+    border-radius: 8px;
+    background-color:#9be422; 
+    color: #000;
+}
+
+
+
+#banner2{
+    background-image: url(../img/secciones/cod.webp);
+    background-size: cover;
+    background-position: center;
+    filter: hue-rotate();
+}
+
+#banner2 .sombra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(211, 0, 0, 0.3) 0%, rgb(247, 123, 0.1) 100%);
+    opacity: 1;
+}
+
+
+
+
+#tercero{/*
+    z-index: 11;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px black;*/
+    background-image: url(../img/secciones/radeon.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+#tercero h2{
+    color: #cc1019;
+}
+
+#tercero span{
+    padding: 5px;
+    border-radius: 8px;
+    background-color:#cc1019; 
+    color: #000;
+}
+
+
+
+
+#banner3{
+    background-image: url(../img/secciones/humo.webp);
+    background-size: cover;
+    background-position: center;
+    filter: hue-rotate();
+}
+
+#banner3 .sombra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(87, 0, 132) 100%);
+    opacity: 1;
+}
+
+
+
+#cuarto {
+    background-image: url(../img/secciones/nvidia.webp);
+    background-size: cover;
+    background-position: center;
+}
+#cuarto h2{
+    color: #9be422;
+}
+
+#cuarto span{
+    padding: 5px;
+    border-radius: 8px;
+    background-color:#9be422; 
+    color: #000;
+}
+
+
+
+#banner4{
+    background-image: url(../img/secciones/coronadehielo2.webp);
+    background-size: cover;
+    background-position: left;
+    filter: hue-rotate();
+}
+#banner4 .shape{
+    align-items: ;
+}
+
+#banner4 .sombra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.8) 100%);
+    opacity: 1;
+}
+
+#quinto {
+    background-image: url(../img/secciones/equipos.webp);
+    background-size: cover;
+    background-position: center;
+}
+#quinto h2{
+    color: #cc1019;
+}
+
+#quinto span{
+    padding: 5px;
+    border-radius: 8px;
+    background-color:#cc1019; 
+    color: #000;
+}
+
+@media (min-width:1px) and (max-width:550px){
+    .banner .caja{
+        align-items: flex-end;
+    }
+    .banner .izq{
+        width: 45%;
+    }
+    #banner3 .caja{
+        align-items: flex-start;
+    }
+}
+@media (min-width:1px) and (max-width:768px){
+    h1{
+        font-size: 34px;
+        line-height: 40px; 
+    }
+    .seccion .caja{
+        padding: 34px;
+    }
+    .seccion .izq{
+        width: 100%;
+    }
+    .seccion .der{
+        display: none;
+    }
+}
+@media (min-width:769px){
+     h1{
+        font-size: 55px;
+        line-height: 60px; 
+    }
+    .seccion .sombra{
+        display: none;
+    }
+}
+@media (min-width:1px) and (max-width:987px){
+    
+    .espacio{
+        display: block;
+    }
+    .banner{
+        height: 550px;
+    }
+    .banner .shape {
+        align-items: flex-end;
+    }
+    .banner .shape img{
+        vertical-align: bottom;
+        width: 450px;  
+    } 
+}
+
+@media (min-width:1000px){
+    h1{
+        font-size: 70px;
+        line-height: 75px; 
+    }
+}
+
+@media (min-width:1250px){
+    h1{
+        font-size: 89px;
+        line-height: 95px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

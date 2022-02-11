@@ -1,0 +1,130 @@
+.tienda ul {
+   list-style: none;
+    margin-left: 8px;
+    font-size: 13px;
+}
+
+.tienda h3 {
+    font-size: 21px;
+}
+
+.tienda .detalle i {
+    width: 5px;
+    margin-right: 16px;
+}
+
+.tienda img {
+    display: block;
+    margin: auto;
+    max-width: 320px;
+}
+
+#bannertienda {
+    color: #fff;
+    height: 144px;
+    background-color: black;
+}
+
+main {
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+    background: linear-gradient(to top, rgb(41, 0, 0) 0%, rgba(204 , 16 , 25 , 1) 100%);
+    padding-top: 34px;
+    padding-bottom: 34px;
+    width: 100%;
+    height: auto;
+}
+main .contenedor {
+    position:;
+    max-width: unset;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .filtros {
+    border-radius: 13px;
+    padding: 8px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 21px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+.filtros {
+    box-shadow: 0px 0px 8px 1px black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filtros div {
+    margin: auto;
+}
+
+.filtros label {
+    padding: 3px;
+}
+
+.filtros select {
+    padding: 3px;
+}
+
+.filtros button {
+    padding: 3px;
+}
+
+article {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 8px 1px black;
+    overflow: hidden;
+    border-radius: 13px;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 34px;
+    width: 320px;
+    height: 410px;
+}
+
+article:hover {
+    box-shadow: 0px 0px 15px 3px black;
+}
+
+article .imagen {
+    overflow: hidden;
+    background-color: #fff;
+    height: 43%;
+}
+
+article .detalle {
+    overflow: hidden;
+    background-color:black;
+    height: 48%;
+    padding: 5px 13px;
+}
+
+.detalle .hidden {
+    display: none;
+}
+
+.detalle h3 {
+    color: #9be422;
+}
+
+.detalle ul {
+    color: gray;
+}
+
+article .boton {
+    overflow: hidden;
+    background-color: #9be422;
+    color: #000;
+    height: 9%;
+    transition: all 0.5s;
+}
+
+article .boton:hover {
+    background-color: #fff;
+    color: #000;
+    height: 9%;
+}

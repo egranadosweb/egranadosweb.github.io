@@ -1,0 +1,72 @@
+#modalpromocion{
+    display: none;
+}
+.modalpromocion{
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 2s;
+}
+.modalpromocion .contenidomodalpromocion:before{
+    z-index: 55;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    filter: opacity(0.8);
+    transition: all 2s;
+}
+.modalpromocion .contenidomodalpromocion > div{
+    display: flex;
+    margin: auto;
+    z-index: 201;
+    width: 320px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+.modalpromocion .contenidomodalpromocion div  div{
+    padding: 21px;
+    z-index: 201;
+    width: 80%;
+    height: 80%;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+.modalpromocion h2{
+    text-align: center;
+    width: 100%;
+}
+.modalpromocion h3{
+    text-align:center;
+}
+.modalpromocion .contenidomodalpromocion img{
+    display: block;
+    margin: auto;
+}
+#cerrarmodal{
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    z-index: 202;
+}
+#cerrarmodal{
+    color:#fff;
+    font-weight: 700;
+    font-size: 55px;
+}
+#cerrarmodal:hover{
+    color: #fff;
+}
+#cerrarmodal:active ~ .modal{
+    display: none;
+}

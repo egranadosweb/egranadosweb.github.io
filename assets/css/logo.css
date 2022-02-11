@@ -1,0 +1,42 @@
+/*77777777777   LOGO   777777777777777777777*/
+.logo{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.logo a{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.logo img {
+    max-width: 150px;
+    height: auto;
+    margin: auto;
+    opacity: 0;
+    animation: logo;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes logo{
+    from{
+        opacity: 0;
+    }
+    to{
+       opacity: 1; 
+    }
+}
+/*77777777777   LOGO   777777777777777777777*/
+@media (min-width:1200px){
+   .logo img {
+        max-width: 200px;
+    }
+}
+
+@media (min-width:1250px){
+
+    .logo img {
+        max-width: 250px;
+    }
+}
